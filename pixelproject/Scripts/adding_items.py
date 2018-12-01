@@ -35,14 +35,14 @@ class Star(object):
 
 	@color.setter
 	def color(self,value):
-		self._color = value	
+		# self._color = value	
 	
 class Pixel(object):
 	def __init__(self,x,y):
 		self._x = x
 		self._y = y
 		self._is_alive = True
-		self._color = 8
+		self._color = 9
 
 	@property
 	def x(self):
@@ -56,17 +56,13 @@ class Pixel(object):
 	def is_alive(self):
 		return self._is_alive
 
-	@is_alive.setter
-	def is_alive(self,value):
-		self._is_alive = value
+
 	
 	@property
 	def color(self):
 		return self._color
 
-	@color.setter
-	def color(self,value):
-		self._color = value
+
 
 class App(object):
 	def __init__(self, x, y, caption, fps):
